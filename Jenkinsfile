@@ -15,10 +15,11 @@ pipeline {
 			steps {
 				echo "Integration Test"
 			}
+		} post {
+			always {
+				echo "i am awesome"
+			}
 		}
-	} post {
-		always {
-			echo "i am awesome"
-		}
-	}
+		
+	} 
 }
